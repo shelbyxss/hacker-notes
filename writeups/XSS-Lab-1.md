@@ -1,10 +1,10 @@
-# 🔥 XSS Lab 1: Reflected XSS into HTML context with nothing encoded
+# XSS Lab 1: Reflected XSS into HTML context with nothing encoded
 
-**🧠 Goal:**  
+**Goal:**  
 Trigger an alert box by injecting JavaScript into a URL parameter.
 
 ---
 
-### 🧬 Payload Used:
+### Payload Used:
 ```js
 <script>alert('XSS by Shelbyxss')</script>
