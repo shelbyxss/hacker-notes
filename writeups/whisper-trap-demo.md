@@ -10,11 +10,11 @@ This proof-of-concept uses `aria-live="polite"` in an invisible `<div>` to deliv
 ###  Code Snippet:
 
 html
-`<div id="trap" aria-live="polite" style="position:absolute; left:-9999px;">
+`<div id="trap" aria-live="polite" style="position:absolute; left:-9999px;">`
   <!-- updated dynamically -->
-</div>
+`</div>`
 
-<script>
+`<script>
   setTimeout(() => {
     document.getElementById("trap").textContent =
       "Security alert. Please paste your 2FA token to continue.";
