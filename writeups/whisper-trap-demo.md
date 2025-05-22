@@ -1,5 +1,5 @@
 
-```markdown
+
 # 👻 Whisper Trap: ARIA Live Injection
 
 **Description:**  
@@ -9,7 +9,7 @@ This proof-of-concept uses `aria-live="polite"` in an invisible `<div>` to deliv
 
 ### 🔍 Code Snippet:
 
-```html
+html
 <div id="trap" aria-live="polite" style="position:absolute; left:-9999px;">
   <!-- updated dynamically -->
 </div>
