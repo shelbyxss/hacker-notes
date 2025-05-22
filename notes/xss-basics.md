@@ -1,5 +1,4 @@
 
-```markdown
 # 🧪 XSS Basics
 
 ## Types:
